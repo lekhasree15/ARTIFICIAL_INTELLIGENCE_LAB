@@ -1,25 +1,26 @@
-room = {
-    "A": "Dirty",
-    "B": "Dirty"
-}
+n = int(input("Enter the number of rooms: "))
 
-position = "A"
+rooms = []
 
-while "Dirty" in room.values():
+for i in range(n):
+    status = input(f"Is Room {i + 1} dirty or clean? ").lower()
+    rooms.append(status)
 
-    print("Current position:", position)
-    print("Room status:", room)
+current_room = 0
 
-    if room[position] == "Dirty":
-        print("Cleaning room", position)
-        room[position] = "Clean"
-
+while "dirty" in rooms:
+    if rooms[current_room] == "dirty":
+        print(f"Vacuum cleaner is cleaning Room {current_room + 1}...")
+        rooms[current_room] = "clean"
     else:
-        if position == "A":
-            position = "B"
-        else:
-            position = "A"
+        print(f"Room {current_room + 1} is already clean.")
 
-    print()
+    if current_room < n - 1:
+        print(f"Moving Right: Room {current_room + 1} -> Room {current_room + 2}")
+        current_room += 1
+    else:
+        print(f"Moving Left: Room {current_room + 1} -> Room {current_room}")
+        current_room -= 1
 
-print("All rooms are clean!")
+print("\nAll rooms are clean!")
+print("Vacuum cleaner stopped.")
