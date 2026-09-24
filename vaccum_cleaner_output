@@ -1,12 +1,13 @@
-Current position: A
-Room status: {'A': 'Dirty', 'B': 'Dirty'}
-Cleaning room A
-
-Current position: A
-Room status: {'A': 'Clean', 'B': 'Dirty'}
-
-Current position: B
-Room status: {'A': 'Clean', 'B': 'Dirty'}
-Cleaning room B
+Enter the number of rooms: 3
+Is Room 1 dirty or clean? dirty
+Is Room 2 dirty or clean? clean
+Is Room 3 dirty or clean? dirty
+Vacuum cleaner is cleaning Room 1...
+Moving Right: Room 1 -> Room 2
+Room 2 is already clean.
+Moving Right: Room 2 -> Room 3
+Vacuum cleaner is cleaning Room 3...
+Moving Left: Room 3 -> Room 2
 
 All rooms are clean!
+Vacuum cleaner stopped.
