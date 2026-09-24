@@ -1,0 +1,12 @@
+Current position: A
+Room status: {'A': 'Dirty', 'B': 'Dirty'}
+Cleaning room A
+
+Current position: A
+Room status: {'A': 'Clean', 'B': 'Dirty'}
+
+Current position: B
+Room status: {'A': 'Clean', 'B': 'Dirty'}
+Cleaning room B
+
+All rooms are clean!
